@@ -1,0 +1,11 @@
+git config --global user.name "vaishnavi"
+git config --global user.email "vyj2000@gmail.com"
+
+git init
+git clone
+git status
+git add
+git commit -m "second commit"
+
+git remote add origin "https://github.com/Vaishnavi-janagave/gitwad.git"
+git push -u origin master
