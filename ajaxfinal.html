@@ -1,0 +1,52 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+ <meta charset="UTF-8"> 
+ <meta http-equiv="X-UA-Compatible" content="IE=edge"> 
+ <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+ <title>Document</title> 
+</head> 
+<style> 
+ .container { 
+width: fit-content; 
+margin: auto; 
+ } 
+ .center { text-align: center; 
+ } input { 
+padding: 5px 2px; 
+ } 
+</style> 
+<body> 
+ <div class="container"> 
+ <div id="list"> 
+ <div class="center"> 
+ <h1>Registration form</h1> 
+ </div> 
+ <form action="/index.js" method="POST"> 
+ <ul> 
+ <li> 
+ <label for="name">Username :</label> 
+ <input type="text" name="name" required> 
+ </li> 
+ <li> 
+ <label for="name">Email : </label> 
+ <input type="email" name="email" required> 
+ </li> 
+ <li> 
+ <label for="name">Contact no :</label> 
+ <input type="number" name="contact" required> 
+ </li> 
+ <li> 
+ <label for="name">Password :</label> 
+ <input type="password" name="password" required> 
+ </li> 
+ </ul> 
+ <div class="center"> 
+ <button type="submit">submit</button> 
+ </div> 
+ </form> 
+ </div>
+ </div> 
+</body> 
+<script src="index.js"></script> 
+</html> 
