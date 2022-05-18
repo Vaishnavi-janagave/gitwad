@@ -1,0 +1,99 @@
+<!DOCTYPE html> 
+<html> 
+<head> 
+ <!-- Include meta tag to ensure proper rendering and touch zooming --> 
+ <meta name="viewport" content="width=device-width, initial-scale=1"> 
+ <!-- Include jQuery Mobile stylesheets --> 
+ <link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css"> 
+ <!-- Include the jQuery library --> 
+ <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+ <!-- Include the jQuery Mobile library --> 
+ <script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script> </head> 
+<style> 
+ #footer { position: 
+inherit; width: 
+inherit; 
+ bottom: 0; 
+ } 
+ 
+ #myPanel { 
+ width: 40%; 
+ } 
+ .hero { display: flex; 
+flex-direction: column; 
+align-items: center; 
+justifycontent: center; 
+/* text-align: center; */ 
+ } 
+</style> 
+<body> 
+ <div data-role="page" id="page1"> 
+ <div data-role="panel" id="myPanel" data-position="right" data-display="overlay"> 
+ <div data-role="header" data-theme="b"> 
+ <h1>Register</h1> 
+ </div> 
+ <form method="post" action="#pageone" data-ajax="false"> 
+ <label for="name">Name : <span>*</span></label> 
+ <input type="text" name="name" id="name" placeholder="Name"> 
+ <label for="email">Email: <span>*</span></label> 
+ <input type="email" id="email" name="email" placeholder="Email" /> 
+ <fieldset data-role="controlgroup" class="ui-field-contain"> 
+ <legend>Gender:</legend> 
+ <label for="male">Male</label> 
+ <input type="radio" name="gender" id="male" value="male"> 
+ <label for="female">Female</label> 
+ <input type="radio" name="gender" id="female" value="female"> 
+ </fieldset> 
+ <fieldset class="ui-field-contain"> 
+ <label for="day">Select Day: </label> 
+ <select name="day" id="day"> 
+ <option value="mon">Monday</option> 
+ <option value="tue">Tuesday</option> 
+ <option value="wed">Wednesday</option> 
+ </select> 
+ </fieldset> 
+ <label for="info">Message:</label> 
+ <textarea name="addinfo" id="info" placeholder="Message"></textarea> 
+<input type="submit" data-inline="true" value="Submit" data-theme="b"> </form> 
+ </div> 
+ <div data-role="header" data-theme="b"> 
+ <button class="ui-btn ui-icon-home ui-btn-icon-left">Home</button> 
+ <h1>Tech Seminar</h1> 
+ </div> 
+ <div data-role="main" class="ui-content"> 
+ 
+ <div class="hero" data-theme="b"> 
+ <h1>The Grand Tech seminar</h1> 
+ <h2>Now in your city.</h2> 
+ <a href="#myPanel" class="ui-btn">Book seat</a> 
+ </div> 
+ <div class="ui-grid-b ui-responsive"> 
+ <div data-role="collapsible" class="ui-block-a"> 
+ <h1>1st Event</h1> 
+ <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Consequuntur laudantium unde 
+magnam molestiae repudiandae sequi dignissimos voluptate, non quas reiciendis, omnis 
+earum eligendi.. 
+ </p> 
+ </div> 
+ <div data-role="collapsible" class="ui-block-b"> 
+ <h1>2nd Event</h1> 
+ <p>I'm the expanded content. Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+Facilis enim iste 
+ Officiis, corrupti ullam. Iusto, debitis architecto a aspernatur nemo ab atque asperiores 
+necessitatibus neque? Iure corrupti minus dolorem sequi optio enim qui!</p> 
+ </div> 
+ <div data-role="collapsible" class="ui-block-c"> 
+ <h1>3rd Event</h1> 
+ <p> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Magni veniam 
+distinctio, inventore consectetur quo explicabo pariatur similique sint soluta 
+ratione sapiente ex odio. I'm the expanded content.</p> 
+</div> 
+ </div> 
+ 
+ </div> 
+ <div id="footer" data-role="footer" data-theme="b"> 
+ <h1>Made By Ashish</h1> 
+ </div> 
+ </div> 
+</body> 
+</html>
