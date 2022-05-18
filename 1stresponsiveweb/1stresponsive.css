@@ -1,0 +1,27 @@
+.side-bar{ 
+    width: 25%; 
+     /* min-height: 100vh; */ 
+    height: 100%; 
+     float: left; 
+     background-color: lightgray; 
+    padding: 1.5rem; 
+    } ul 
+    li{ 
+    margintop: 0.5rem; 
+    } ul li div{ marginleft: 1rem; 
+    } 
+    .right{ float: 
+    right; padding: 
+    2rem; width: 
+    75%; 
+    } 
+    .card{ 
+     margin: 1rem; 
+    } 
+    .analytics-card{ backgroundcolor: #e95d4c7d; 
+    } 
+    .progress{ marginbottom: 10px; 
+    } 
+    .project-card{ background-color: 
+    rgb(255, 242, 219); 
+    }
